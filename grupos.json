@@ -1,0 +1,53 @@
+{
+    "grupos" : {
+        "1" : {
+            "BOMBA1" : true,
+            "BOMBA2" : true,
+            "BOMBA3" : true,
+            "BOMBA4" : true,
+            "BOMBA5" : true,
+            "BOMBA6" : true
+        },
+        "2" : {
+            "BOMBA1" : true,
+            "BOMBA2" : true,
+            "BOMBA3" : true,
+            "BOMBA4" : true,
+            "BOMBA5" : true,
+            "BOMBA6" : true
+        },
+        "3" : {
+            "BOMBA1" : true,
+            "BOMBA2" : true,
+            "BOMBA3" : true,
+            "BOMBA4" : true,
+            "BOMBA5" : true,
+            "BOMBA6" : true
+        },  
+        "4" : {
+            "BOMBA1" : true,
+            "BOMBA2" : true,
+            "BOMBA3" : true,
+            "BOMBA4" : true,
+            "BOMBA5" : true,
+            "BOMBA6" : true
+        },
+        "5" : {
+            "BOMBA1" : true,
+            "BOMBA2" : true,
+            "BOMBA3" : true,
+            "BOMBA4" : true,
+            "BOMBA5" : true,
+            "BOMBA6" : true
+        },
+        "6" : {
+            "BOMBA1" : true,
+            "BOMBA2" : true,
+            "BOMBA3" : true,
+            "BOMBA4" : true,
+            "BOMBA5" : true,
+            "BOMBA6" : true
+        }
+    }
+}
+ 
