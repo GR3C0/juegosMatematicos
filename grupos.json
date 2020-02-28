@@ -1,6 +1,7 @@
 {
     "grupos" : {
         "1" : {
+            "logged" : false,
             "BOMBA1" : true,
             "BOMBA2" : true,
             "BOMBA3" : true,
@@ -9,6 +10,7 @@
             "BOMBA6" : true
         },
         "2" : {
+            "logged" : false,
             "BOMBA1" : true,
             "BOMBA2" : true,
             "BOMBA3" : true,
@@ -17,14 +19,16 @@
             "BOMBA6" : true
         },
         "3" : {
+            "logged" : false,
             "BOMBA1" : true,
             "BOMBA2" : true,
             "BOMBA3" : true,
             "BOMBA4" : true,
             "BOMBA5" : true,
             "BOMBA6" : true
-        },  
+        },
         "4" : {
+            "logged" : false,
             "BOMBA1" : true,
             "BOMBA2" : true,
             "BOMBA3" : true,
@@ -33,6 +37,7 @@
             "BOMBA6" : true
         },
         "5" : {
+            "logged" : false,
             "BOMBA1" : true,
             "BOMBA2" : true,
             "BOMBA3" : true,
@@ -41,6 +46,7 @@
             "BOMBA6" : true
         },
         "6" : {
+            "logged" : false,
             "BOMBA1" : true,
             "BOMBA2" : true,
             "BOMBA3" : true,
@@ -48,6 +54,8 @@
             "BOMBA5" : true,
             "BOMBA6" : true
         }
+    },
+    "resultados" : {
+        "login" : 34
     }
 }
- 
