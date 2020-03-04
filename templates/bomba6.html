@@ -1,1 +1,51 @@
-<iframe height="400px" width="100%" src="https://repl.it/@diegomorell/UnknownLuxuriousAudacity?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="{{url_for('static', filename='css/main.css')}}" />
+  <link rel="stylesheet" href="{{url_for('static', filename='css/util.css')}}" />
+</head>
+<body>
+  
+<div class="container-fluid text-center">   
+    <div class="row">
+    <div class="col-md-4"></div>
+    <div class="titulo">
+        <h1>Bienvenidos a los juegos matematicos</h1>
+        <iframe src="https://jm20.juanjoperis.repl.run/" height="200px" width="1000px" class="pregunta"></iframe>
+    </div>
+    <div class="col-md-4"></div>
+    </div>
+    <form action="javascript:enviarRespuesta()">
+        <div class="row respuesta">
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                <div class="wrap-input100 validate-input" data-validate="Password is required">
+                    <input class="input100" type="text" id="pass">
+                    <span class="focus-input100"></span>
+                    <span class="label-input100">Respuesta</span>
+                </div>
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+        <div class="row botones-bomba">
+            <div class="col-md-2"></div>
+            <div class="col-md-3 enviar">
+                <button href="/"> Enviar </button>
+            </div>
+            <div class="col-md-2"></div>
+            <div class="col-md-3 regresar">
+                <button href="/"> Regresar </button>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>

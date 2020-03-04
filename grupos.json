@@ -1,61 +1,61 @@
 {
     "grupos" : {
         "1" : {
-            "logged" : false,
-            "BOMBA1" : true,
-            "BOMBA2" : true,
-            "BOMBA3" : true,
-            "BOMBA4" : true,
-            "BOMBA5" : true,
-            "BOMBA6" : true
+            "logged" : "False",
+            "BOMBA1" : "True",
+            "BOMBA2" : "True",
+            "BOMBA3" : "True",
+            "BOMBA4" : "True",
+            "BOMBA5" : "True",
+            "BOMBA6" : "True"
         },
         "2" : {
-            "logged" : false,
-            "BOMBA1" : true,
-            "BOMBA2" : true,
-            "BOMBA3" : true,
-            "BOMBA4" : true,
-            "BOMBA5" : true,
-            "BOMBA6" : true
+            "logged" : "False",
+            "BOMBA1" : "True",
+            "BOMBA2" : "True",
+            "BOMBA3" : "True",
+            "BOMBA4" : "True",
+            "BOMBA5" : "True",
+            "BOMBA6" : "True"
         },
         "3" : {
-            "logged" : false,
-            "BOMBA1" : true,
-            "BOMBA2" : true,
-            "BOMBA3" : true,
-            "BOMBA4" : true,
-            "BOMBA5" : true,
-            "BOMBA6" : true
+            "logged" : "False",
+            "BOMBA1" : "True",
+            "BOMBA2" : "True",
+            "BOMBA3" : "True",
+            "BOMBA4" : "True",
+            "BOMBA5" : "True",
+            "BOMBA6" : "True"
         },
         "4" : {
-            "logged" : false,
-            "BOMBA1" : true,
-            "BOMBA2" : true,
-            "BOMBA3" : true,
-            "BOMBA4" : true,
-            "BOMBA5" : true,
-            "BOMBA6" : true
+            "logged" : "False",
+            "BOMBA1" : "True",
+            "BOMBA2" : "True",
+            "BOMBA3" : "True",
+            "BOMBA4" : "True",
+            "BOMBA5" : "True",
+            "BOMBA6" : "True"
         },
         "5" : {
-            "logged" : false,
-            "BOMBA1" : true,
-            "BOMBA2" : true,
-            "BOMBA3" : true,
-            "BOMBA4" : true,
-            "BOMBA5" : true,
-            "BOMBA6" : true
+            "logged" : "False",
+            "BOMBA1" : "True",
+            "BOMBA2" : "True",
+            "BOMBA3" : "True",
+            "BOMBA4" : "True",
+            "BOMBA5" : "True",
+            "BOMBA6" : "True"
         },
         "6" : {
-            "logged" : false,
-            "BOMBA1" : true,
-            "BOMBA2" : true,
-            "BOMBA3" : true,
-            "BOMBA4" : true,
-            "BOMBA5" : true,
-            "BOMBA6" : true
+            "logged" : "False",
+            "BOMBA1" : "True",
+            "BOMBA2" : "True",
+            "BOMBA3" : "True",
+            "BOMBA4" : "True",
+            "BOMBA5" : "True",
+            "BOMBA6" : "True"
         }
     },
     "resultados" : {
-        "login" : 34
+        "login" : "34"
     }
 }
