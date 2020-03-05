@@ -621,8 +621,10 @@ input.input100 {
 .bomb-section {
   display: flex;
   position: absolute;
+  text-align: center;
   bottom: 0;
   padding-bottom: 10%;
+  display: -webkit-box;
 }
 
 .titulo {
