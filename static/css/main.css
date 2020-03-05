@@ -633,6 +633,8 @@ input.input100 {
 
 .repl{
   margin-top: 5%;
+  border: 5px solid rgb(206, 209, 0);
+  border-radius: 5px;
 }
 
 .respuesta {
@@ -694,4 +696,13 @@ input.input100 {
 
 .bomba {
   margin-left: 6.5em;
+}
+
+.imagen {
+  margin-top: -6em;
+  margin-bottom: 1%;
+}
+
+.enunciado {
+  color: white;
 }

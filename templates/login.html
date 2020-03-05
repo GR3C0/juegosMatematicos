@@ -33,10 +33,12 @@
 		<div class="container-login100">
 			<div class="wrap-login100">
 				<form class="login100-form validate-form" action="javascript:check_pass()">
-					<img src='static/images/lasalle.jpeg' height="100" width="450">
+					<img src='static/images/lasalle.jpeg' class="imagen" height="30%" width="100%">
 					<span class="login100-form-title p-b-43">
 						Juegos Matematicos
 					</span>
+					Para poder acceder a la prueba debéis introducir el valor del décimo término de la siguiente sucesión
+					<img src='static/images/eq.png'  height="7%" width="450">
 					{{msg}}
 					<select class=wrap-input100 validate-input>
 						{% for grupo in db["grupos"] %}
