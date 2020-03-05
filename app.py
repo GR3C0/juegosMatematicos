@@ -29,6 +29,9 @@ def check_login(grupo, resp):
     else:
         return render_template('login.html', db=db, msg="Resultado incorrecto bro")
 
+@app.route('/clock')
+def clock():
+    return render_template('clock.html')
 
 #----------------UTIL----------------------
 def read_db():

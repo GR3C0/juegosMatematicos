@@ -7,42 +7,103 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="{{url_for('static', filename='css/clock.css')}}"/>
   <link rel="stylesheet" href="{{url_for('static', filename='css/main.css')}}" />
   <link rel="stylesheet" href="{{url_for('static', filename='css/util.css')}}" />
+  <script src="{{url_for('static', filename='js/jquery.countdown.js')}}"></script>
+  <script src="{{url_for('static', filename='js/main.js')}}"></script>
+  <script src="{{url_for('static', filename='js/login.js')}}"></script>
 </head>
 <body>
   
 <div class="container-fluid text-center">   
   <div class="row">
-    <div class="col-md-4"></div>
-    <div>
+    <div class="col-md-2"></div>
+    <div class="titulo col-md-8">
       <h1>Bienvenidos a los juegos matematicos</h1>
-      <iframe src="https://jm20.juanjoperis.repl.run/" height="200px" width="1000px"></iframe>
     </div>
-    <div class="col-md-4"></div>
+    <div class="col-md-2"></div>
+  </div>
+  <div class="row">
+    <iframe src="https://jm20.juanjoperis.repl.run/" height="100%" width="100%" class="repl"></iframe>
   </div>
 
-  <div class="row bomb-section ">
-      <div class="col-md-2">
-        <a href="/bomba1"><img src='static/images/bomba.jpeg' height="100" width="100"></a>
+  <div class="row bomb-section">
+      <div class="col-md-2 bomba">
+        {% if db["grupos"]["1"]["BOMBA1"] == "True"%}
+          <a href="/bomba1"><img src='static/images/bomba.png' height="100" width="100"></a>
+          <div id="clockB1"></div>
+        {% else %}  
+          <a><img src='static/images/bombaVerde.png' height="100" width="100"></a>
+          <div id="desactivada">DESACTIVADA</div>
+        {% endif %}
       </div>
-      <div class="col-md-2">
-        <a href="/bomba2"><img src='static/images/bomba.jpeg' height="100" width="100"></a>
+      <div class="col-md-2 bomba">
+        {% if db["grupos"]["2"]["BOMBA1"] == "True"%}
+          <a href="/bomba2"><img src='static/images/bomba.png' height="100" width="100"></a>
+          <div id="clockB2"></div>
+        {% else %}  
+          <a><img src='static/images/bombaVerde.png' height="100" width="100"></a>
+          <div id="desactivada">DESACTIVADA</div>
+        {% endif %}
       </div>
-      <div class="col-md-2">
-        <a href="/bomba3"> <img src='static/images/bomba.jpeg' height="100" width="100"></a>
+      <div class="col-md-2 bomba">
+        {% if db["grupos"]["3"]["BOMBA1"] == "True"%}
+          <a href="/bomba3"><img src='static/images/bomba.png' height="100" width="100"></a>
+          <div id="clockB3"></div>
+        {% else %}  
+          <a><img src='static/images/bombaVerde.png' height="100" width="100"></a>
+          <div id="desactivada">DESACTIVADA</div>
+        {% endif %}
       </div>
-      <div class="col-md-2">
-        <a href="/bomba4"><img src='static/images/bomba.jpeg' height="100" width="100"></a>
+      <div class="col-md-2 bomba">
+        {% if db["grupos"]["4"]["BOMBA1"] == "True"%}
+          <a href="/bomba4"><img src='static/images/bomba.png' height="100" width="100"></a>
+          <div id="clockB4"></div>
+        {% else %}  
+          <a><img src='static/images/bombaVerde.png' height="100" width="100"></a>
+          <div id="desactivada">DESACTIVADA</div>
+        {% endif %}
       </div>
-      <div class="col-md-2">
-        <a href="/bomba5"><img src='static/images/bomba.jpeg' height="100" width="100"></a>
+      <div class="col-md-2 bomba">
+        {% if db["grupos"]["5"]["BOMBA1"] == "True"%}
+          <a href="/bomba5"><img src='static/images/bomba.png' height="100" width="100"></a>
+          <div id="clockB5"></div>
+        {% else %}  
+          <a><img src='static/images/bombaVerde.png' height="100" width="100"></a>
+          <div id="desactivada">DESACTIVADA</div>
+        {% endif %}
       </div>
-      <div class="col-md-2">
-        <a href="/bomba6"><img src='static/images/bomba.jpeg' height="100" width="100"></a>
+      <div class="col-md-2 bomba">
+        {% if db["grupos"]["6"]["BOMBA1"] == "True"%}
+          <a href="/bomba6"><img src='static/images/bomba.png' height="100" width="100"></a>
+          <div id="clockB6"></div>
+        {% else %}  
+          <a><img src='static/images/bombaVerde.png' height="100" width="100"></a>
+          <div id="desactivada">DESACTIVADA</div>
+        {% endif %}
       </div>
   </div>
 </div>
-
+<script>
+  $('#clockB1').countdown('2020/03/07 12:12:12', function(event) {
+    $(this).html(event.strftime('%H:%M:%S'));
+  });
+  $('#clockB2').countdown('2020/03/07 12:12:12', function(event) {
+    $(this).html(event.strftime('%H:%M:%S'));
+  });
+  $('#clockB3').countdown('2020/03/07 12:12:12', function(event) {
+    $(this).html(event.strftime('%H:%M:%S'));
+  });
+  $('#clockB4').countdown('2020/03/07 12:12:12', function(event) {
+    $(this).html(event.strftime('%H:%M:%S'));
+  });
+  $('#clockB5').countdown('2020/03/07 12:12:12', function(event) {
+    $(this).html(event.strftime('%H:%M:%S'));
+  });
+  $('#clockB6').countdown('2020/03/07 12:12:12', function(event) {
+    $(this).html(event.strftime('%H:%M:%S'));
+  });
+  </script>
 </body>
 </html>

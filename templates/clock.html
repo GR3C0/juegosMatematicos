@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <script src=""></script>
+  <link rel="stylesheet" href="{{url_for('static', filename='css/main.css')}}" />
+  <link rel="stylesheet" href="{{url_for('static', filename='css/util.css')}}" />
+  <link rel="stylesheet" href="{{url_for('static', filename='css/clock.css')}}" />
+  <script src="{{url_for('static', filename='js/main.js')}}"></script>
+  <script src="{{url_for('static', filename='js/jquery.countdown.js')}}"></script>
+  <script src="{{url_for('static', filename='js/login.js')}}"></script>
+  <script src="{{url_for('static', filename='js/clock.js')}}"></script>
+</head>
+<body>
+  
+<div class="container-fluid text-center">   
+  <div class="row">
+    <div id="clock">HOLA</div>
+  </div>
+  <script>$('#clock').countdown('2020/03/07 12:12:12', function(event) {
+    $(this).html(event.strftime('%H:%M:%S'));
+  });</script>
+</div>
+
+</body>
+</html>

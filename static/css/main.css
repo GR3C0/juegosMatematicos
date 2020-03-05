@@ -52,7 +52,7 @@
 
 body, html {
   background: #0f3854;
-  background: radial-gradient(ellipse at center,  #0a2e38  0%, #272727 70%);
+  background: radial-gradient(ellipse at center,  #122641  0%, #272727 90%);
   background-size: 100%;
 
 }
@@ -627,8 +627,12 @@ input.input100 {
 
 .titulo {
   color: rgb(206, 206, 206);
+}
+
+.repl{
   margin-top: 5%;
 }
+
 .respuesta {
   margin-top: 4%;
 }
@@ -685,3 +689,7 @@ input.input100 {
 }
 
 /*----------------BOTONES----------------*/
+
+.bomba {
+  margin-left: 6.5em;
+}
