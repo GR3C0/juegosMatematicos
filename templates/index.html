@@ -13,6 +13,7 @@
   <script src="{{url_for('static', filename='js/jquery.countdown.js')}}"></script>
   <script src="{{url_for('static', filename='js/main.js')}}"></script>
   <script src="{{url_for('static', filename='js/login.js')}}"></script>
+  <script src="{{url_for('static', filename='js/globales.js')}}"></script>
 </head>
 <body>
   
@@ -31,7 +32,7 @@
   <div class="row bomb-section">
       <div class="col-md-2 bomba">
         {% if db["grupos"]["1"]["BOMBA1"] == "True"%}
-          <a href="/bomba1"><img src='static/images/bomba.png' height="100" width="100"></a>
+          <a href="/bomba1" class="bomba1 exploto"><img src='static/images/bomba.png' height="100" width="100"></a>
           <div id="clockB1"></div>
         {% else %}  
           <a><img src='static/images/bombaVerde.png' height="100" width="100"></a>
@@ -40,7 +41,7 @@
       </div>
       <div class="col-md-2 bomba">
         {% if db["grupos"]["2"]["BOMBA1"] == "True"%}
-          <a href="/bomba2"><img src='static/images/bomba.png' height="100" width="100"></a>
+          <a href="/bomba2" class="bomba2"><img src='static/images/bomba.png' height="100" width="100"></a>
           <div id="clockB2"></div>
         {% else %}  
           <a><img src='static/images/bombaVerde.png' height="100" width="100"></a>
@@ -49,7 +50,7 @@
       </div>
       <div class="col-md-2 bomba">
         {% if db["grupos"]["3"]["BOMBA1"] == "True"%}
-          <a href="/bomba3"><img src='static/images/bomba.png' height="100" width="100"></a>
+          <a href="/bomba3" class="bomba3"><img src='static/images/bomba.png' height="100" width="100"></a>
           <div id="clockB3"></div>
         {% else %}  
           <a><img src='static/images/bombaVerde.png' height="100" width="100"></a>
@@ -58,7 +59,7 @@
       </div>
       <div class="col-md-2 bomba">
         {% if db["grupos"]["4"]["BOMBA1"] == "True"%}
-          <a href="/bomba4"><img src='static/images/bomba.png' height="100" width="100"></a>
+          <a href="/bomba4" class="bomba4"><img src='static/images/bomba.png' height="100" width="100"></a>
           <div id="clockB4"></div>
         {% else %}  
           <a><img src='static/images/bombaVerde.png' height="100" width="100"></a>
@@ -67,7 +68,7 @@
       </div>
       <div class="col-md-2 bomba">
         {% if db["grupos"]["5"]["BOMBA1"] == "True"%}
-          <a href="/bomba5"><img src='static/images/bomba.png' height="100" width="100"></a>
+          <a href="/bomba5" class="bomba5"><img src='static/images/bomba.png' height="100" width="100"></a>
           <div id="clockB5"></div>
         {% else %}  
           <a><img src='static/images/bombaVerde.png' height="100" width="100"></a>
@@ -76,7 +77,7 @@
       </div>
       <div class="col-md-2 bomba">
         {% if db["grupos"]["6"]["BOMBA1"] == "True"%}
-          <a href="/bomba6"><img src='static/images/bomba.png' height="100" width="100"></a>
+          <a href="/bomba6" class="bomba6"><img src='static/images/bomba.png' height="100" width="100"></a>
           <div id="clockB6"></div>
         {% else %}  
           <a><img src='static/images/bombaVerde.png' height="100" width="100"></a>
@@ -86,23 +87,48 @@
   </div>
 </div>
 <script>
-  $('#clockB1').countdown('2020/03/07 12:12:12', function(event) {
+  console.log(window.GRUPO)
+  $('#clockB1').countdown('2020/03/06 08:25:25', function(event) {
     $(this).html(event.strftime('%H:%M:%S'));
+    if(event.strftime('%H:%M:%S') == '00:00:00'){
+      $(".bomba1").addClass(".exploto");
+      $(".bomba1").attr("href", "");
+    }
   });
   $('#clockB2').countdown('2020/03/07 12:12:12', function(event) {
     $(this).html(event.strftime('%H:%M:%S'));
+    if(event.strftime('%H:%M:%S') == '00:00:00'){
+      $(".bomba1").addClass(".exploto");
+      $(".bomba1").attr("href", "");
+    }
   });
   $('#clockB3').countdown('2020/03/07 12:12:12', function(event) {
     $(this).html(event.strftime('%H:%M:%S'));
+    if(event.strftime('%H:%M:%S') == '00:00:00'){
+      $(".bomba1").addClass(".exploto");
+      $(".bomba1").attr("href", "");
+    }
   });
   $('#clockB4').countdown('2020/03/07 12:12:12', function(event) {
     $(this).html(event.strftime('%H:%M:%S'));
+    if(event.strftime('%H:%M:%S') == '00:00:00'){
+      $(".bomba1").addClass(".exploto");
+      $(".bomba1").attr("href", "");
+    }
   });
   $('#clockB5').countdown('2020/03/07 12:12:12', function(event) {
     $(this).html(event.strftime('%H:%M:%S'));
+    if(event.strftime('%H:%M:%S') == '00:00:00'){
+      $(".bomba1").addClass(".exploto");
+      $(".bomba1").attr("href", "");
+    }
   });
   $('#clockB6').countdown('2020/03/07 12:12:12', function(event) {
     $(this).html(event.strftime('%H:%M:%S'));
+    if(event.strftime('%H:%M:%S') == '00:00:00'){
+      $(".bomba1").addClass(".exploto");
+      $(".bomba1").attr("href", "");
+    }
   });
   </script>
 </body>

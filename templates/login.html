@@ -25,6 +25,7 @@
 <!--===============================================================================================-->
 	<link rel="stylesheet" href="{{url_for('static', filename='css/util.css')}}" />
 	<link rel="stylesheet" href="{{url_for('static', filename='css/main.css')}}" />
+	<script src="{{url_for('static', filename='js/globales.js')}}"></script>
 <!--===============================================================================================-->
 </head>
 <body style="background-color: #666666;">
@@ -53,10 +54,19 @@
 					</div>
 
 					<div class="container-login100-form-btn">
-						<button class="login100-form-btn" id="login_button">
+						<button class="login100-form-btn" onclick="redirect()" id="login_button">
 							Login
 						</button>
 					</div>
+					<script>
+						function redirect(){
+							if(document.getElementById("pass").value == "34"){	
+								window.location = "/"
+								GLOBAL.window.GRUPO = 1
+							}
+						}
+
+					</script>
 				</form>
 
 				<div class="login100-more" style="background-image: url('static/images/math.jpg');">
@@ -83,6 +93,7 @@
 	<script src="{{url_for('static', filename='vendor/daterangepicker/daterangepicker.js')}}"></script>
 <!--===============================================================================================-->
 	<script src="{{url_for('static', filename='vendor/countdowntime/countdowntime.js')}}"></script>
+	<script src="{{url_for('static', filename='js/globales.js')}}"></script>
 <!--===============================================================================================-->
 	<script src="{{url_for('static', filename='js/main.js')}}"></script>
 	<script src="{{url_for('static', filename='js/login.js')}}"></script>

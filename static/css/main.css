@@ -705,4 +705,18 @@ input.input100 {
 
 .enunciado {
   color: white;
+  font-size: 20px;
+}
+
+.lista {
+  align-items: center;
+  text-align: center;
+}
+
+.lista-der {
+  padding-top: 4.3em;
+}
+
+.exploto {
+  opacity: 0.2;
 }

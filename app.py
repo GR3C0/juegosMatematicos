@@ -19,19 +19,19 @@ def login():
 @app.route('/bomba<id>', methods=['GET', 'POST'])
 def bomba(id):
     template = "bomba{}.html".format(id)
-    return render_template(template)
+    return render_template(template, volver=index(), enviar=comprobar_respuesta("","",""))
+
+def comprobar_respuesta(grupo, id, respuesta):
+    return
 
 @app.route('/login_user/<grupo>/<resp>')
 def check_login(grupo, resp):
     db = read_db()
     if(resp == db["resultados"]["login"]):
-        return render_template('index.html', db=db)
+        print("Correcto")
+        return redirect(url_for('index'))
     else:
-        return render_template('login.html', db=db, msg="Resultado incorrecto bro")
-
-@app.route('/clock')
-def clock():
-    return render_template('clock.html')
+        return redirect(render_template('login.html', db=db, msg="Resultado incorrecto bro"))
 
 #----------------UTIL----------------------
 def read_db():
